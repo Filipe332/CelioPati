@@ -1,0 +1,138 @@
+/* Estilos gerais */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #ff4500;
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .countdown div {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+  }
+  
+  .countdown div span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Estilos do carrossel */
+  .carousel {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Nome fixo abaixo do carrossel */
+  .nome-foto {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    color: #ff4500;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Navegação do carrossel */
+  .slick-prev, .slick-next {
+    font-size: 24px;
+    color: #ff4500;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #ff0000;
+  }
+  
+  /* Animação de corações flutuantes */
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(-20px) translateX(20px) rotate(20deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0) translateX(0) rotate(0);
+      opacity: 0.7;
+    }
+  }
+  
+  .hearts-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca os corações atrás do conteúdo */
+  }
+  
+  .hearts-background i {
+    position: absolute;
+    color: #ff4757; /* Cor dos corações */
+    font-size: 24px; /* Tamanho dos corações */
+    animation: float 5s infinite ease-in-out; /* Animação */
+    opacity: 0.7;
+  }
+  
+  /* Posiciona os corações aleatoriamente */
+  .hearts-background i:nth-child(1) { top: 10%; left: 5%; animation-duration: 6s; }
+  .hearts-background i:nth-child(2) { top: 20%; left: 80%; animation-duration: 8s; }
+  .hearts-background i:nth-child(3) { top: 50%; left: 30%; animation-duration: 7s; }
+  .hearts-background i:nth-child(4) { top: 70%; left: 60%; animation-duration: 9s; }
+  .hearts-background i:nth-child(5) { top: 40%; left: 90%; animation-duration: 5s; }
+  .hearts-background i:nth-child(6) { top: 80%; left: 10%; animation-duration: 6s; }
+  .hearts-background i:nth-child(7) { top: 30%; left: 50%; animation-duration: 7s; }
+
+  /* Nome fixo abaixo do carrossel */
+.nome-foto {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    color: #ff4500;
+    margin-top: 20px;
+    text-align: center;
+  }
